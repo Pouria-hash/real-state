@@ -1,8 +1,8 @@
 import Layout from '@/components/Layout';
-import styles from '@/styles/blog.module.scss';
+import styles from '@/styles/Blog.module.scss';
 import { API_URL } from '@/config/index';
 import { Col, Row } from 'react-bootstrap';
-import Link from 'next/link';
+
 import PostContainer from '@/components/PostContainer';
 
 const Blog = ({ posts, message }) => {
