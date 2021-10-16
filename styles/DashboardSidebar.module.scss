@@ -1,0 +1,45 @@
+.sidebarContainer {
+	width: 300px;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	background-color: #023047;
+	position: fixed;
+	left: 0;
+
+	.userContainer {
+		padding: 50px 0;
+		text-align: center;
+		background-color: rgba(5, 98, 145, 0.706);
+		h2 {
+			color: #fff;
+			letter-spacing: 1px;
+		}
+	}
+	.sidebar {
+		padding: 50px 0;
+
+		ul {
+			list-style: none;
+			// text-align: center;
+			padding: 0;
+			li {
+				color: rgb(204, 204, 204);
+				padding: 10px 20px;
+				transition: background-color 0.2s ease-in-out;
+
+				&:hover {
+					background-color: #03496b;
+					cursor: pointer;
+					// border-left: 2px solid #ff0000c4;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 983px) {
+	.sidebarContainer {
+		display: none;
+	}
+}

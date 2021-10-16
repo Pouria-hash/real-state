@@ -1,0 +1,39 @@
+.showImageContainer {
+	// width: 100%;
+	height: 450px;
+	margin-bottom: 10px;
+
+	.showImage {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 20px;
+	}
+}
+
+.imagesContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+
+	.imageContainer {
+		height: 130px;
+		width: 200px;
+		overflow: hidden;
+		margin-bottom: 5px;
+
+		.image {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 10px;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}

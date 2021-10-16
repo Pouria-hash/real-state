@@ -1,0 +1,67 @@
+.properties {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+
+	.propertyContainer {
+		min-width: 260px;
+		max-width: 360px;
+		margin-bottom: 10px;
+		border-radius: 10px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.11);
+		transition: all 0.2s ease-in-out;
+		background-color: #fff;
+
+		&:hover {
+			box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.205);
+		}
+
+		.imgContainer {
+			padding: 8px;
+			position: relative;
+			cursor: pointer;
+			.service {
+				position: absolute;
+				top: 25px;
+				left: 30px;
+				color: #fff;
+				background-color: #2b2d42;
+				padding: 5px;
+				border-radius: 4px;
+				letter-spacing: 1px;
+				font-size: 14px;
+			}
+			img {
+				width: 100%;
+				height: 240px;
+				object-fit: cover;
+				border-radius: 10px;
+			}
+			.price {
+				position: absolute;
+				bottom: 10px;
+				left: 25px;
+				color: #fff;
+				font-size: 23px;
+				letter-spacing: 1px;
+				font-weight: 500;
+			}
+		}
+		.content {
+			padding: 10px 15px;
+			h5 {
+				cursor: pointer;
+			}
+			p {
+				color: #6c757d;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.propertyContainer {
+		width: 300px;
+	}
+}
